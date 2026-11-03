@@ -1,37 +1,135 @@
-#filmesserie img{
-    height: 20rem;
+
+
+/*fonte */
+
+@import url('https://fonts.googleapis.com/css2?family=Redaction+20:ital,wght@0,400;0,700;1,400&family=Redaction+35:ital,wght@0,400;0,700;1,400&display=swap');
+
+.redaction-35-regular {
+  font-family: "Redaction 35", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-.hp-pjo {
-    display: flex;
-    flex-direction: column;
+.redaction-35-bold {
+  font-family: "Redaction 35", serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
-.filmeserie {
-    display: flex;
-    flex-direction: row;
+.redaction-35-regular-italic {
+  font-family: "Redaction 35", serif;
+  font-weight: 400;
+  font-style: italic;
 }
-header {
+
+.redaction-20-regular {
+  font-family: "Redaction 20", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.redaction-20-bold {
+  font-family: "Redaction 20", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.redaction-20-regular-italic {
+  font-family: "Redaction 20", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+
+/* inicio */
+
+h1, h2 { 
+    font-family: "Redaction 35", serif;
+    font-weight: 700;
+    font-style: normal;
     text-align: center;
     
 }
 
+h1 {
+    font-size: 3em;
+    color: rgb(16, 48, 90);
+}
+
+h2 {
+    padding-top: 1em;
+    font-size: 2em;
+}
+
 body {
-    background-image: url(images/vista.jpg) 
+      font-family: "Redaction 20", serif;
 }
 
-a img {
-    height: 10em;
-    padding: 1em;
+header {
+    background-color: beige;
+    padding: 2em;
 }
 
-.choice {
+.inicio {
+    background-color: rgb(121, 164, 172);
+    padding-bottom: 5em;
+    padding-top: 2em;
+    text-align: center;
+}
+.inicio-flex {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-h2 {
+.choice {
     text-align: center;
+    background-color: rgb(237, 238, 239);
+    margin: 1em;
+    border-radius: 2em;
+    font-family: "Redaction 35", serif;
+    padding-bottom: 1em;
+    color: rgb(75, 104, 109);
 }
+
+.choice img {
+    height: 20em;
+    padding: 1em;
+    border-radius: 2em;
+}
+
+
+/*filmes e series */
+#filmesserie img{
+    height: 20rem;
+}
+
+#filmesserie {
+    background-color: rgb(244, 241, 198);
+    color: rgb(75, 104, 109);
+}
+
+h3 {
+    font-size: 1.5em;
+    padding-bottom: 0.5em;
+}
+.filmeserie {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.hp-pjo {
+    padding: 1em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+
+
