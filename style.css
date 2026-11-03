@@ -130,6 +130,43 @@ h3 {
     
 }
 
+/* musicasss */
+
+.musics-container {
+    display: grid; /*grade 3x3*/
+    grid-template-columns: repeat(3, 1fr); /* Cria 3 colunas iguais */
+    gap: 1em; /* espaço entre as musicas */
+    justify-items: center;
+}
+
+.musica {
+    text-align: center;
+    border-radius: 2em;
+    padding-bottom: 1em;
+    width: 100%; /* Ocupa todo o espaço da coluna no grid , usei o display grid pq era mais fácil de implementar*/
+}
 
 
+.texto_playlist-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.playlist-texto {
+    text-align: center;
+    background-color: rgb(237, 238, 239);
+    margin: 1em;
+    border-radius: 2em;
+    font-family: "Redaction 35", serif;
+    padding-bottom: 1em;
+    color: rgb(75, 104, 109);
+}
+
+.tudinho-musica {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
