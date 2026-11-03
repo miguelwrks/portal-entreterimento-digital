@@ -122,6 +122,16 @@ h3 {
     
 }
 
+details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(166, 182, 185);
+    width: 70%;
+    margin-left: 2.6em;
+    margin-right: 2.6em;
+}
+
 .hp-pjo {
     padding: 1em;
     text-align: center;
@@ -131,39 +141,55 @@ h3 {
 }
 
 /* musicasss */
+#musica {
+    background-color: rgb(121, 164, 172);
+    color: beige;
+}
 
 .musics-container {
     display: grid; /*grade 3x3*/
     grid-template-columns: repeat(3, 1fr); /* Cria 3 colunas iguais */
     gap: 1em; /* espaço entre as musicas */
     justify-items: center;
+    padding: 1em;
 }
 
 .musica {
     text-align: center;
     border-radius: 2em;
-    padding-bottom: 1em;
+    padding: 1em;
     width: 100%; /* Ocupa todo o espaço da coluna no grid , usei o display grid pq era mais fácil de implementar*/
 }
 
 
-.texto_playlist-flex {
+.texto_playlist-flexbox {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-shrink: 2;
+    width: 100%; /* deixar um tamanho para os elementos ocuparem */
 }
 
 .playlist-texto {
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    background-color: rgb(237, 238, 239);
-    margin: 1em;
-    border-radius: 2em;
+    background-color: rgb(43, 60, 61);
+    margin-bottom: 1em;
+    border-radius: 1em;
     font-family: "Redaction 35", serif;
-    padding-bottom: 1em;
-    color: rgb(75, 104, 109);
+    color: rgb(203, 225, 228);
+    /* DEFININDO O TAMANHO IGUAL: */
+    width: 90%; /* Cada bloco vai ocupar 80% da largura disponível */
+    max-width: 100%; /* Impede que fique largo demais em telas grandes */
+    box-sizing: border-box; /* Garante que o padding não estoure a largura */
+    padding: 4em;
 }
 
+.playlist-texto p {
+    padding-bottom: 0.5em;
+}
 .tudinho-musica {
     display: flex;
     flex-direction: row;
