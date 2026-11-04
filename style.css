@@ -196,3 +196,33 @@ details {
     justify-content: center;
     align-items: center;
 }
+
+/*JOGOS E TECH */
+
+#gamestech {
+    
+}
+
+.game img{
+
+    height: 10em;
+    width: 10em;
+
+}
+
+.games-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.game {
+    text-align: center;
+    background-color: rgb(237, 238, 239);
+    margin: 1em;
+    padding: 0.5em;
+    padding-bottom: 2em;
+    color: rgb(75, 104, 109);
+
+}
